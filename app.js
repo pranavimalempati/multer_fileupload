@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/uploads',express.static(path.join(__dirname,'uploads')));
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 console.log("hello world")
 app.use('/',router.router)
 app.listen(port, () => {
