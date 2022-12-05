@@ -2,7 +2,7 @@
 const Jimp = require("jimp");
 const fs = require("fs");
 
-const fileUpload = async (req,res)=>{
+const fileUpload =  (req,res)=>{
     try {
         let filesArray = [];
         req.files.forEach(element => {
@@ -34,7 +34,7 @@ const fileUpload = async (req,res)=>{
 }
 
 
-const converter = async (req,res)=>{
+const converter =  (req,res)=>{
     try {
         req.files.forEach(element => {
             const file = {
@@ -72,7 +72,7 @@ const converter = async (req,res)=>{
     
 }
 
-const blob = async(req,res)=>{
+const blob = (req,res)=>{
     try {
         req.files.forEach(element => {
             const file = {
